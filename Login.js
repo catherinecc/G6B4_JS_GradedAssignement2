@@ -7,7 +7,11 @@ sessionStorage.setItem("credentials",JSON.stringify({name:["catherine","mariam"]
 var res = sessionStorage.getItem("credentials")
 console.log(res)
 
-function validate(){
+
+
+var btn = document.getElementById("login")
+btn.onclick = function(){
+
     var username = document.getElementById("username").value
     var password = document.getElementById("password").value
 
@@ -23,3 +27,5 @@ function validate(){
         }
     })
 }
+
+
